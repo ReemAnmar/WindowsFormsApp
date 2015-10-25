@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -95,6 +94,7 @@
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -130,29 +130,10 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(274, 26);
             this.dateTimePicker1.TabIndex = 1;
             // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.domainUpDown1.ForeColor = System.Drawing.Color.Navy;
-            this.domainUpDown1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.domainUpDown1.Items.Add("09:00 AM");
-            this.domainUpDown1.Items.Add("10:00 AM");
-            this.domainUpDown1.Items.Add("11:00 AM");
-            this.domainUpDown1.Items.Add("12:00 PM");
-            this.domainUpDown1.Items.Add("01:00 PM");
-            this.domainUpDown1.Items.Add("02:00 PM");
-            this.domainUpDown1.Items.Add("03:00 PM");
-            this.domainUpDown1.Items.Add("04:00 PM");
-            this.domainUpDown1.Location = new System.Drawing.Point(6, 62);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(205, 26);
-            this.domainUpDown1.TabIndex = 2;
-            this.domainUpDown1.Text = "Incident time ";
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dateTimePicker4);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.domainUpDown1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Navy;
             this.groupBox1.Location = new System.Drawing.Point(12, 69);
@@ -827,6 +808,16 @@
             this.vScrollBar1.TabIndex = 29;
             this.vScrollBar1.TabStop = true;
             // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.CalendarForeColor = System.Drawing.Color.Navy;
+            this.dateTimePicker4.CalendarMonthBackground = System.Drawing.Color.LavenderBlush;
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker4.Location = new System.Drawing.Point(4, 62);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(274, 26);
+            this.dateTimePicker4.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -878,7 +869,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
@@ -942,6 +932,7 @@
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
     }
 }
 
